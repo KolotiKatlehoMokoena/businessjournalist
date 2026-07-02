@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { HashRouter, NavLink, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, NavLink, Routes, Route } from 'react-router-dom'
 import { FaArrowUp } from 'react-icons/fa'
 import Home from './pages/Home'
 import About from './pages/About'
@@ -20,7 +20,7 @@ function App() {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' })
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <div className="min-h-screen bg-slate-950 text-slate-100">
         <header className="border-b border-slate-800 bg-slate-950/95">
           <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-4 sm:gap-4 sm:px-6 sm:py-5 sm:flex-row sm:items-center sm:justify-between">
@@ -73,7 +73,7 @@ function App() {
           </button>
         )}
       </div>
-    </HashRouter>
+    </BrowserRouter>
   )
 }
 
